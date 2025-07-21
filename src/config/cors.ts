@@ -1,7 +1,7 @@
 import { CorsOptions } from 'cors'
 
 export const corsConfig : CorsOptions = {
-    origin: function(origin, callback) {
+    origin: /*function(origin, callback) {
         const whiteList = [process.env.FRONTEND_URL]
 
         if(process.argv[2] === '--api') {
@@ -13,5 +13,6 @@ export const corsConfig : CorsOptions = {
         } else {
             callback(new Error('Error de CORS'))
         }
-    }
+    }*/
+   "*"
 }
